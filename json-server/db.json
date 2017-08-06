@@ -1,0 +1,15 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "done": false,
+      "content": "Study Angular yo",
+      "isEditing": false
+    },
+    {
+      "id": 2,
+      "content": "bbb",
+      "done": false
+    }
+  ]
+}
