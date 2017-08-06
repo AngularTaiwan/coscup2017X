@@ -1,21 +1,25 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  todos:any[] = [];
-  inputHint:string = 'Input your todos';
-  todo:string;
-
-  addTodos(todoInput:HTMLInputElement){
-    this.todos.push({content:this.todo, done:false});
-    todoInput.value = '';
+  todos: any[] = [];
+  inputHint: string = "Input your todos";
+  todo: string;
+  filter = 'all';
+  addTodos(todoInput: HTMLInputElement) {
+    this.todos.push({ content: this.todo, done: false });
+    todoInput.value = "";
   }
 
-  change(event:string){
+  change(event: string) {
     console.log(event);
+  }
+
+  setFilterCondition(condition) {
+    this.filter = condition;
   }
 }

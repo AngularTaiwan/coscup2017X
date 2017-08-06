@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit {
 
-  title:string = 'Lala Todos';
+  title:string = 'Todos';
+  subtitle = 'This is subtitle.';
+  arr = [1,2,3,4];
+  pi = 3.14159;
+  money = 32.123;
+  date = new Date();
+  mailstrig = 'mail';
+  mapper = {'mail': '電子郵件'};
+  mapper2 = {'=1': '電子郵件', '=2': '姓名', 'other': '其他'};
 
   constructor() { }
 

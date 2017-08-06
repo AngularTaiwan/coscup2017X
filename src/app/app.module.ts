@@ -1,21 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { TodoDoneDirective } from './todo-done.directive';
+import { MyFilerPipe } from './pipe/my-filer.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
-    TodoDoneDirective
+    TodoDoneDirective,
+    MyFilerPipe
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'zh-TW'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
