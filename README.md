@@ -1,3 +1,6 @@
+# 說明
+這個 Repo 是 COSCUP 2017 活動內實作的程式碼。相關的簡報資源整理在這篇[討論文章](https://forum.angular.tw/t/coscup-workshop-angular/466/7)內
+
 # Coscup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
